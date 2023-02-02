@@ -13,15 +13,15 @@ services:
       MESSENGER_TRANSPORT_DSN: doctrine://default
     ports:
       - "8001:80"
-    volumes:
-      - ./config:/var/www/config
-      - ./src:/var/www/src
-      - ./templates:/var/www/templates
-      - ./tests:/var/www/tests
-      - ./translations:/var/www/translations
-      - ./public/build:/var/www/public/build
-      - ./public/images:/var/www/public/images
-      - ./migrations:/var/www/migrations
+    # volumes:
+    #   - ./config:/var/www/config
+    #   - ./src:/var/www/src
+    #   - ./templates:/var/www/templates
+    #   - ./tests:/var/www/tests
+    #   - ./translations:/var/www/translations
+    #   - ./public/build:/var/www/public/build
+    #   - ./public/images:/var/www/public/images
+    #   - ./migrations:/var/www/migrations
     depends_on:
       - database
 
