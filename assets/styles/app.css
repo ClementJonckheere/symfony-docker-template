@@ -7,7 +7,6 @@ body {
 
 nav {
     background-color: #3F826D;
-
 }
 
 main {
@@ -173,7 +172,6 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 50px;
 }
 
 .block-content-home {
@@ -241,10 +239,10 @@ h3 {
   }
 
 
-/* Footer */
-.footer-container {
-    background-color: #0e1b15;
-    height: 50px;
+/****** Footer *******/
+
+footer {
+    background-color: #101e18 !important;
 }
     .footer-content {
         width: 100%;
@@ -253,18 +251,32 @@ h3 {
             color: #fefefe;
             text-align: center;
         }
-
+.logo-footer {
+  width: 80%;
+}
 
 /************* A PROPOS  *************/
 
-
-.content-titre-apropos {
-    width: 100%;
+.titre-apropos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.selection_produits {
-    display: flex;
-    justify-content: space-around;
+.container-atelier {
+  height: 30vh;
+}
+
+.block-content-apropos {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.content-titre-apropos {
+  height: 55vh;
+  display: flex;
 }
 
 .main-apropos {
@@ -273,13 +285,6 @@ h3 {
 }
 
 /********** Produits ************/
-.main-contact {
-  padding-top: 5vh;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
 
 .button-produits{
   color: white;
@@ -315,7 +320,18 @@ h3 {
   width: 70%;
 }
 
+.selection_produits {
+  display: flex;
+  justify-content: space-around;
+}
+
 /********** Contact ************/
+
+.main-contact {
+  padding-top: 5vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .container-main {
   width: 100%;

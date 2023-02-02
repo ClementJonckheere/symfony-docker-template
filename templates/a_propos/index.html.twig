@@ -14,19 +14,27 @@
         <h1>Maroquinerie à Amiens depuis 2023</h1>
       </div>
       <div class="content-titre-apropos">
-      <h2>Voyage au coeur de la maroquinnerie</h2>
-        <p>L'atelier Tibag voit le jour à Amiens en 2023.</p>
-        <p>John Doe crée un atelier de maroquinerie à Amiens en 2023
-        L'atelier rassemble plus 15 artisants, donne vie a de nouvelles lignes de maroquinerie.
-        Avec des matières nobles, durables et locales.</p>
-      <h2>L'atelier français</h2>
+     <div class="container-apropos d-flex">
+    <div class="block-content-apropos">
+      <h2 class="titre-block-content-apropos">La creation de la marque</h2>
+      <div class="text-apropos">
+        <p>La marque Tibag est réputée pour ses créations de maroquinerie haut de gamme en cuir français. Chaque produit est fabriqué à la main dans les ateliers de la ville de Toulouse, en utilisant des techniques ancestrales pour garantir la qualité et la durabilité. La marque est fière de son engagement en faveur de la durabilité en choisissant des matériaux écologiques et en travaillant avec des artisans locaux pour minimiser son impact environnemental. Les produits Tibag sont appréciés pour leur design élégant et leur touche de luxe, rendant chaque sac ou portefeuille unique en son genre.</p>
+      </div>
+    </div>
+    <div class="image-content-home">
+      <img class="picture-block-home" src="{{ asset('images/sac_home_page.jpg')}}" alt="symfony" />
+    </div>
+  </div>
+    </div>
+    <div class="container-atelier">
+      <div class="title-atelier mb-4">
+        <h2>L'atelier français</h2>
+      </div>
         <p>L'atelier Tibag a fait le choix du "Made in France", dévoilant ainsi sa volonté de perpétuer l'excellence de l'artisanat français.</p>
         <p>Tous les produits sont confectionnés entièrement à la main dans l'atelier en propre de la marque par des artisans français détenant un savoir-faire unique. Les matières utilisées sont nobles, durables et locales. Elles proviennent de tanneries situées en Europe.</p>
       </div>
-    </div>
-      <div class="image-apropos">
-          <img class="img-side-apropos" src="{{ asset('images/sac_home_page.jpg')}}" alt="Image sac a propos" />
       </div>
+    </div>
   </div>
 </main>
 {% endblock %}

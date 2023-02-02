@@ -22,21 +22,23 @@ class ContactController extends AbstractController
     #[Route('/contact/submit', name: 'app_contact_submit')]
     public function handleForm(Request $request, MailerInterface $mailer): Response
         {
-            $name = $request->request->get('name');
-            $telephone = $request->request->get('telephone');
-            $address = $request->request->get('address');
+
+            // $name = $request->request->get('name');
+            // $telephone = $request->request->get('telephone');
+            // $address = $request->request->get('address');
             $email = $request->request->get('email');
             $subject = $request->request->get('subject');
             $message = $request->request->get('message');
-        
+            // dump($request->query->all());
             $email = (new Email())
                 ->from($email)
                 ->to('your-email@example.com')
                 ->subject($subject)
-                ->text("Name: $name\nEmail: $email\nTelephone: $telephone\nAddress: $address\n\n$message");
-        
+                ->text($message);
+        //Name: $name\nEmail: $email\nTelephone: $telephone\nAddress: $address\n\n$message
             $mailer->send($email);
-        
-            return new Response('Message envoyé avec succès');
+
+            return $this->redirectToRoute('app_contact_submit',["Message"=>'message envoyee']);
+
         }
 }
