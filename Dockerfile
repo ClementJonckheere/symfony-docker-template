@@ -33,8 +33,8 @@ COPY public/images /var/public/images
 RUN touch .env \
     && cp .env.exemple .env
 
-RUN composer install --no-dev --no--interaction \
-    && composer-dump-autoload
+RUN composer install --no-dev --no-interaction \
+    && composer dump-autoload
 
 
 # Création des fichiers de cache et définition des permissions
