@@ -30,8 +30,12 @@ COPY . .
 
 COPY public/images /var/public/images
 
-RUN composer install \
-    && composer dump-autoload
+RUN touch .env\
+    && cp .env.exemple\ .env
+
+RUN composer install --no-dev --no--interraction \
+    && composer-dump-autolard
+
 
 # Création des fichiers de cache et définition des permissions
 RUN chown -R www-data:www-data /var/www/var \
