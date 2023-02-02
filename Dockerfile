@@ -33,7 +33,7 @@ COPY public/images /var/public/images
 RUN touch .env \
     && cp .env.exemple .env
 
-RUN composer install--no-dev --no--interaction \
+RUN composer install --no-dev --no--interaction \
     && composer-dump-autoload
 
 
