@@ -30,8 +30,8 @@ COPY . .
 
 COPY public/images /var/public/images
 
-RUN touch .env\
-    && cp .env.exemple\ .env
+RUN touch .env \
+    && cp .env.exemple .env
 
 RUN composer install --no-dev --no--interraction \
     && composer-dump-autolard
