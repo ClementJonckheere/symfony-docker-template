@@ -70,7 +70,6 @@ class ProduitsController extends AbstractController
         ];
 
         return $this->render('produits/index.html.twig', [
-            'controller_name' => 'ProduitsController',
             'produits' => $produits
         ]);
     }

@@ -15,9 +15,7 @@ class ContactController extends AbstractController
     public function index(): Response
     {
         
-        return $this->render('contact/index.html.twig', [
-            'controller_name' => 'ContactController',
-        ]);
+        return $this->render('contact/index.html.twig');
     }
     #[Route('/contact/submit', name: 'app_contact_submit')]
     public function handleForm(Request $request, MailerInterface $mailerInterface): Response
